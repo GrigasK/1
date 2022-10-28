@@ -11,6 +11,7 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 
 document.querySelector("form").addEventListener("submit", (e) => {
   e.preventDefault();
+
   const lb = 2.2046;
   const grm = 0.001;
   const oz = 35.274;
@@ -30,4 +31,8 @@ document.querySelector("form").addEventListener("submit", (e) => {
   ozText.textContent = "Svoris oz: " + kg * oz + " oz";
 
   output.append(lbsText, grmText, ozText);
+
+  document.getElementById("clear-btn").addEventListener("click", () => {
+    window.location.href = "./index.html";
+  });
 });

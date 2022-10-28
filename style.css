@@ -61,6 +61,20 @@ form {
   color: #fff;
 }
 
+#clear-btn {
+  width: 35%;
+  background-color: #f7f7f7;
+  border: 0;
+  outline: 0;
+  font-size: 1.1em;
+}
+
+#clear-btn:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {
